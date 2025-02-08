@@ -29,6 +29,7 @@ public interface Megamind {
      * @param name        that the task should be given
      * @param task        that should be ran
      * @param proxyServer instance
+     * @param plugin velocity plugin instance
      */
     void registerTask(String name, Runnable task, ProxyServer proxyServer, Object plugin);
 
@@ -51,6 +52,7 @@ public interface Megamind {
      * @param repeat      period in long
      * @param timeUnit    at which the repeat long should be considered
      * @param proxyServer instance
+     * @param plugin velocity plugin instance
      */
     void registerRepeatingTask(String name, Runnable task, long repeat, TimeUnit timeUnit, ProxyServer proxyServer, Object plugin);
 }
